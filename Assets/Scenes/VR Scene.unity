@@ -308,6 +308,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 112821071}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &139870681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 139870682}
+  m_Layer: 7
+  m_Name: Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &139870682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139870681}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.0135, z: 0.0243}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 755124586}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &222783920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,7 +1147,7 @@ GameObject:
   - component: {fileID: 614257608}
   - component: {fileID: 614257607}
   - component: {fileID: 614257606}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grab Interactable Velocity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1558,6 +1589,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: pistol
       objectReference: {fileID: 0}
+    - target: {fileID: 4511655667520406305, guid: 087e2a9d318d8b842b11b221d1f79534,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4511655667520406309, guid: 087e2a9d318d8b842b11b221d1f79534,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4511655667520406311, guid: 087e2a9d318d8b842b11b221d1f79534,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1565,6 +1611,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1599311131}
+    - targetCorrespondingSourceObject: {fileID: 4511655667520052993, guid: 087e2a9d318d8b842b11b221d1f79534,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 139870682}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4511655667520406305, guid: 087e2a9d318d8b842b11b221d1f79534,
         type: 3}
@@ -1607,8 +1657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92da2ad1f7548d04985ee2a3e0de329e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
-  spawnPoint: {fileID: 0}
+  bullet: {fileID: 6551390722107323211, guid: 76d5d43dcb3af2948a353e4b4f3ca72c, type: 3}
+  spawnPoint: {fileID: 139870682}
   fireSpeed: 20
 --- !u!114 &755124588
 MonoBehaviour:
@@ -4263,7 +4313,7 @@ GameObject:
   - component: {fileID: 1567985799}
   - component: {fileID: 1567985804}
   - component: {fileID: 1567985803}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Simple Interactable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4612,7 +4662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1599311131}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Attach Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4648,7 +4698,7 @@ GameObject:
   - component: {fileID: 1637653582}
   - component: {fileID: 1637653581}
   - component: {fileID: 1637653586}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grab Interactable Instantaneous
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5438,7 +5488,7 @@ GameObject:
   - component: {fileID: 2042657391}
   - component: {fileID: 2042657392}
   - component: {fileID: 2042657393}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5730,6 +5780,32 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 83097790271614945, guid: d9d46dc68883f714b86d176e0c25e7b7,
       type: 3}
+  leftCancel:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Cancel
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 4e988b4a-d273-457c-800f-c42b4bff0a82
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6131295136447488360, guid: d9d46dc68883f714b86d176e0c25e7b7,
+      type: 3}
+  rightCancel:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Cancel
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: efe5f758-2754-4ff8-99fb-130f7ea5f38c
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 187161793506945269, guid: d9d46dc68883f714b86d176e0c25e7b7,
+      type: 3}
 --- !u!1 &2122281881
 GameObject:
   m_ObjectHideFlags: 0
@@ -5744,7 +5820,7 @@ GameObject:
   - component: {fileID: 2122281884}
   - component: {fileID: 2122281883}
   - component: {fileID: 2122281882}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grab Interactable Kinematic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
