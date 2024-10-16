@@ -32,4 +32,9 @@ public class GameMenuManager : MonoBehaviour
         // flip 
         menu.transform.forward *= -1;
     }
+
+    public void quitGame()
+    {
+        Application.Quit();
+    }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LeftHand
   - RightHand
+  - Throwable
   layers:
   - Default
   - TransparentFX
